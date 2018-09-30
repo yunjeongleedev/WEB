@@ -1,0 +1,33 @@
+@media all and (min-width:1024px) {
+    span.menu {
+        border-radius: 1.1em;
+        background-color: lightcoral;
+        font-size: 2em;
+    }
+    h1 {
+        text-align: center;
+    }
+    input.submit {
+        text-align: center;
+    }
+    div.question {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 768px) {
+    span.menu {
+        border-radius: 1em;
+        background-color: lightcoral;
+        font-size: 1em;
+    }
+    h1 {
+        margin-left: 1em;
+    }
+    input.submit {
+        margin-left: 1em;
+    }
+    div.question {
+        margin-left: 1em;
+    }
+}

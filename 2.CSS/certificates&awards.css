@@ -1,0 +1,63 @@
+@media all and (min-width:1024px) {
+    span.menu {
+        border-radius: 1.1em;
+        background-color: lightcoral;
+        font-size: 2em;
+    }
+    table.spec {
+        border-collapse: separate;
+        border-spacing: 0.1em;
+        text-align: center;
+        line-height: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table.spec th {
+        padding: 1em;
+        font-weight: bold;
+        vertical-align: middle;
+        color: #fff;
+        background: #da4d70;
+    }
+    table.spec td {
+        padding: 1em;
+        vertical-align: middle;
+        border-bottom: 0.1em solid #fff;
+        background: rgb(219, 219, 219);
+    }
+}
+
+@media all and (max-width: 768px) {
+    span.menu {
+        border-radius: 1em;
+        background-color: lightcoral;
+        font-size: 1em;
+    }
+    table.spec {
+        border-collapse: separate;
+        border-spacing: 0.1em;
+        text-align: center;
+        line-height: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table.spec th {
+        padding: 0.2em;
+        font-weight: bold;
+        font-size: 0.9em;
+        vertical-align: middle;
+        color: #fff;
+        background: #da4d70;
+    }
+    table.spec td {
+        font-size: 0.9em;
+        padding: 0.2em;
+        vertical-align: middle;
+        border-bottom: 0.1em solid #fff;
+        background: rgb(219, 219, 219);
+    }
+}
+
+h2 {
+    text-align: center;
+}

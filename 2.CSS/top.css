@@ -1,0 +1,29 @@
+@media all and (min-width:1024px) {
+  span.menu {
+    border-radius: 1.1em;
+    background-color: lightcoral;
+    font-size: 2em;
+  }
+}
+
+@media all and (max-width: 768px) {
+  span.menu {
+    border-radius: 1em;
+    background-color: lightcoral;
+    font-size: 1em;
+  }
+}
+
+div.name {
+  text-align: center;
+}
+
+#yunjeong {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.description {
+  text-align: center;
+}

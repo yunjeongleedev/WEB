@@ -1,0 +1,35 @@
+@media all and (min-width:1024px) {
+  span.menu {
+    border-radius: 1.1em;
+    background-color: lightcoral;
+    font-size: 2em;
+  }
+}
+
+@media all and (max-width: 768px) {
+  span.menu {
+    border-radius: 1em;
+    background-color: lightcoral;
+    font-size: 1em;
+  }
+  ul.duration {
+    font-size: 0.8em;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: rgb(36, 148, 201);
+}
+
+ul.duration {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ol.list {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
