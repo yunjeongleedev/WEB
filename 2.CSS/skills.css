@@ -4,6 +4,26 @@
     background-color: lightcoral;
     font-size: 2em;
   }
+
+  div.container {
+    display: flex;
+    display: flex;
+  }
+  
+  div.skills_1 {
+    flex: 1;
+    text-align: center;
+  }
+  
+  div.skills_2 {
+    flex: 1;
+    text-align: center;
+  }
+  
+  div.skills_3 {
+    flex: 1;
+    text-align: center;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -12,19 +32,21 @@
     background-color: lightcoral;
     font-size: 1em;
   }
+
+  div.skills_1 {
+    text-align: center;
+  }
+
+  div.skills_2{
+    text-align: center;
+  }
+
+  div.skills_3 {
+    text-align: center;
+  }
 }
 
 h1 {
   text-align: center;
   color: rgb(36, 148, 201);
-}
-
-ul.skills {
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-div.skills {
-  text-align: center;
 }
