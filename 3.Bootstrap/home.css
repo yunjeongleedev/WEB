@@ -1,0 +1,32 @@
+.alert-link {
+    margin-left: 10%;
+}
+
+.pathway {
+    margin-top: 3em;
+}
+
+@media only screen and (max-width: 768px) {
+    .search {
+        margin-left: 10%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    i {
+        margin-top: 2.2em;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .logo {
+        margin-left: 10%;
+    }
+    .search {
+        margin-left: 40%;
+    }
+    i {
+        margin-top: 2.5%;
+    }
+}
