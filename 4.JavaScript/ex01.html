@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+    ">
+    <input id="night_day" type="button" value="night" onclick="
+        if(document.querySelector('#night_day').value==='night'){
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='white';
+            document.querySelector('#night_day').value='day';
+        } else {
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black';
+            document.querySelector('#night_day').value='night';
+        }
+    ">
+    <input type="button" value="hi" onclick="alert('hi')"><br>
+    <input type="text" onchange="alert('changed')"><br>
+    <input type="text" onkeydown="alert('key down!')">
+    <h1>JavaScript</h1>
+    <script>
+        document.write(1+1); // 동적으로 반응하여 연산
+    </script>
+    <h1>html</h1>
+    1+1
+    <h1>JavaScript</h1>
+    <h2>IF-true</h2>
+    <script>
+        document.write("1<br>");
+        if (true) {
+            document.write("2<br>");
+        } else {
+            document.write("3<br>")
+        }
+        document.write("4<br>")
+    </script>
+    <h2>IF-false</h2>
+    <script>
+        document.write("1<br>");
+        if (false) {
+            document.write("2<br>");
+        } else {
+            document.write("3<br>")
+        }
+        document.write("4<br>")
+    </script>
+</body>
+</html>
