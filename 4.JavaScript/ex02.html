@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Array</title>
+</head>
+
+<body>
+    <h1>Array</h1>
+    <h2>Syntax</h2>
+    <h2>get</h2>
+    <script>
+        var array = ['yunjeong', 'lee'];
+        document.write(array[0]);
+    </script>
+    <h2>length</h2>
+    <script>
+        document.write(array.length);
+    </script>
+    <h2>push</h2>
+    <script>
+        array.push('park');
+        array.push('choi');
+        document.write(array);
+    </script>
+    <h2>Loop</h2>
+    <ul>
+        <script>
+            document.write('<li>1</li>');
+            var i = 0;
+            while (i < 3) {
+                document.write('<li>2</li>');
+                document.write('<li>3</li>');
+                i = i + 1;
+            }
+            document.write('<li>4</li>');
+        </script>
+    </ul>
+    <h2>Loop & Array</h2>
+    <ul>
+        <script>
+            var i = 0;
+            while (i < array.length) {
+                document.write('<li>' + array[i] + '</li>');
+                i = i + 1;
+            }
+        </script>
+    </ul>
+</body>
+
+</html>
