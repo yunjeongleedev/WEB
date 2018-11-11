@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
     <h1><a href="https://www.w3schools.com/">Web</a></h1>
     <input type="button" value="night" onclick="
         document.querySelector('body').style.backgroundColor='black';
         document.querySelector('body').style.color='white';
         document.querySelector('#night_day').value='day';
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while (i < alist.length) {
+            alist[i].style.color = 'powderblue';
+            console.log(alist[i]);
+            i = i + 1;
+        }
+        fontcolor;
     ">
     <input type="button" value="day" onclick="
         document.querySelector('body').style.backgroundColor='white';
@@ -22,6 +32,13 @@
             target.style.backgroundColor='black';
             target.style.color='white';
             this.value='day';
+            var alist = document.querySelectorAll('a');
+        var i = 0;
+        while (i < alist.length) {
+            alist[i].style.color = 'powderblue';
+            console.log(alist[i]);
+            i = i + 1;
+        }
         } else {
             target.style.backgroundColor='white';
             target.style.color='black';
@@ -38,7 +55,7 @@
     <input type="text" onkeydown="alert('key down!')">
     <h1>JavaScript</h1>
     <script>
-        document.write(1+1); // 동적으로 반응하여 연산
+        document.write(1 + 1); // 동적으로 반응하여 연산
     </script>
     <h1>html</h1>
     1+1
@@ -64,4 +81,5 @@
         document.write("4<br>")
     </script>
 </body>
+
 </html>
