@@ -3,7 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>JS</title>
+    <script>
+        function nightDayHandler(self) {
+            var target = document.querySelector('body');
+            if (self.value === 'night') {
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                self.value = 'day';
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                var alist = document.querySelectorAll('a');
+                while (i < alist.length) {
+                    alist[i].style.color = 'powderblue';
+                    console.log(alist[i]);
+                    i = i + 1;
+                }
+            } else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                self.value = 'night';
+                var i = 0;
+                var alist = document.querySelectorAll('a');
+                while (i < alist.length) {
+                    alist[i].style.color = 'darkgreen';
+                    console.log(alist[i]);
+                    i = i + 1;
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -19,31 +48,21 @@
             console.log(alist[i]);
             i = i + 1;
         }
-        fontcolor;
     ">
     <input type="button" value="day" onclick="
         document.querySelector('body').style.backgroundColor='white';
         document.querySelector('body').style.color='black';
         document.querySelector('#night_day').value='night';
-    ">
-    <input id="night_day" type="button" value="night" onclick="
-        var target = document.querySelector('body');
-        if(this.value==='night'){
-            target.style.backgroundColor='black';
-            target.style.color='white';
-            this.value='day';
-            var alist = document.querySelectorAll('a');
-        var i = 0;
+        var i=0;
+        var alist = document.querySelectorAll('a');
         while (i < alist.length) {
-            alist[i].style.color = 'powderblue';
+            alist[i].style.color = 'darkgreen';
             console.log(alist[i]);
             i = i + 1;
         }
-        } else {
-            target.style.backgroundColor='white';
-            target.style.color='black';
-            this.value='night';
-        }
+    ">
+    <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
     ">
     <input type="button" value="hi" onclick="alert('hi')"><br><br>
     <ol>
