@@ -18,6 +18,40 @@ app.get('/login', function (req, res) {
 app.get('/penguin', function (req, res) {
     res.send('Hello Router, <img src="/penguin.jpg">');
 });
+// query 객체의 사용법 ex) localhost:4000/topic?id=1
+// id는 property
+app.get('/query', function (req, res) {
+    var topics = [
+        'Javascript is....',
+        'Nodejs is...',
+        'Express is...'
+    ];
+    var output = `
+        <a href="/topic?id=0">JavaScript</a><br>
+        <a href="/topic?id=1">Nodejs</a><br>
+        <a href="/topic?id=2">Express</a><br><br>
+        ${topics[req.query.id]}
+    `
+    res.send(output);
+});
+// semantic url
+app.get('/semantic/:id', function (req, res) {
+    var topics = [
+        'Javascript is....',
+        'Nodejs is...',
+        'Express is...'
+    ];
+    var output = `
+        <a href="/semantic/0">JavaScript</a><br>
+        <a href="/semantic/1">Nodejs</a><br>
+        <a href="/semantic/2">Express</a><br><br>
+        ${topics[req.params.id]}
+    `
+    res.send(output);
+});
+app.get('/form', function (req, res) {
+    res.render('form');
+});
 // 동적으로 한다 = node로 reload 해야 바뀐다
 app.get('/dynamic', function (req, res) {
     var lis = '';
