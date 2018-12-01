@@ -3,6 +3,8 @@
 // express: 로드한 express 모듈을 제어
 var express = require('express');
 var app = express();
+app.set('views', './views');
+app.set('view engine', 'pug');
 // public 디렉토리 생성
 // 정적으로 한다 = 한 번 만들어지면 언제나 똑같은 모습인 html
 // 정적인 파일은 node로 reload하지 않아도 바로 변경됨
