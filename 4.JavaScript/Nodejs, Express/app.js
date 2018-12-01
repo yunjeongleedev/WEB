@@ -3,6 +3,7 @@
 // express: 로드한 express 모듈을 제어
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser')
 app.locals.pretty = true;
 app.set('view engine', 'pug');
 app.set('views', './views');
@@ -10,6 +11,8 @@ app.set('views', './views');
 // 정적으로 한다 = 한 번 만들어지면 언제나 똑같은 모습인 html
 // 정적인 파일은 node로 reload하지 않아도 바로 변경됨
 app.use(express.static('public'));
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
 app.get('/views', function (req, res) {
     res.render('temp', { time: Date(), _title: 'pug tutorial' });
 });
@@ -84,11 +87,16 @@ app.get('/dynamic', function (req, res) {
 app.listen(4000, function () {
     console.log('Connected 4000 port!');
 });
-app.get('/form', function(req, res){
+app.get('/form', function (req, res) {
     res.render('form');
 });
-app.get('/form_receiver', function(req, res){
+app.get('/form_receiver', function (req, res) {
     var title = req.query.title;
     var description = req.query.description;
+    res.send(title + ',' + description);
+});
+app.post('/form_receiver', function (req, res) {
+    var title = req.body.title;
+    var description = req.body.description;
     res.send(title+','+description);
 });
