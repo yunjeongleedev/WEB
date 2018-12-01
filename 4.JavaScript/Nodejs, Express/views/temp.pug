@@ -1,0 +1,11 @@
+html
+    head
+        title= _title
+    body
+        h1 hello pug
+        ul
+            //프로그래밍적으로 제어하기 위한 코드에는 -를 붙인다.
+            -for(var i=0; i<5; i++)
+                li coding
+        // 현재시간을 출력하기 위해서는 pug 밖에서 변수를 만들어야 함
+        div= time

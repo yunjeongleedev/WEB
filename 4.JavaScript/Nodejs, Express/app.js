@@ -3,12 +3,16 @@
 // express: 로드한 express 모듈을 제어
 var express = require('express');
 var app = express();
-app.set('views', './views');
+app.locals.pretty = true;
 app.set('view engine', 'pug');
+app.set('views', './views');
 // public 디렉토리 생성
 // 정적으로 한다 = 한 번 만들어지면 언제나 똑같은 모습인 html
 // 정적인 파일은 node로 reload하지 않아도 바로 변경됨
 app.use(express.static('public'));
+app.get('/views', function (req, res) {
+    res.render('temp', { time: Date(), _title: 'pug tutorial' });
+});
 // get방식으로 접속한 사용자를 받기 위함, '/'은 홈
 // get은 라우터, 나는 라우팅
 app.get('/', function (req, res) {
