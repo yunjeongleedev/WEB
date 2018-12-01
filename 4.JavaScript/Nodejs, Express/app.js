@@ -84,3 +84,11 @@ app.get('/dynamic', function (req, res) {
 app.listen(4000, function () {
     console.log('Connected 4000 port!');
 });
+app.get('/form', function(req, res){
+    res.render('form');
+});
+app.get('/form_receiver', function(req, res){
+    var title = req.query.title;
+    var description = req.query.description;
+    res.send(title+','+description);
+});
