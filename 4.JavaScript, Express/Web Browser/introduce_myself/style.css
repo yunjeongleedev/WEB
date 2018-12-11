@@ -1,0 +1,22 @@
+.footer {
+    margin-top: 1em;
+    padding-top: 1em;
+    color: #aaa;
+    border-top: .05rem solid #e5e5e5;
+    margin-bottom: 2em;
+}
+
+.carousel-slide {
+    margin-top: 5%;
+    width: 15%;
+    height: 10%;
+    /* float: left; */
+    margin-left: 15%
+}
+
+.carousel-item {
+    margin-top: 10%;
+    height: 100%; 
+    width: 100%; 
+    object-fit: div;
+}
