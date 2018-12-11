@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header clearfix">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #260301;">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    <font style="color: white;">Who am I?</font>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="skill.html">
+                                <font style="color: white;">역량</font>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/signin">
+                                <font style="color: white;">로그인</font>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/users/new">
+                                <font style="color: white;">회원가입</font>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/java.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Java</h5>
+            <p class="card-text">객체지향적 프로그래밍 언어.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Java
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="alert alert-primary" role="alert">
+                                Java
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">50%</div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/web.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">HTML/CSS/JavaScript</h5>
+            <p class="card-text">
+                HTML: 하이퍼텍스트 마크업 언어<br>
+                CSS: 종속형 시트 또는 캐스케이딩 스타일 시트<br>
+                JS: 객체 기반의 스크립트 프로그래밍 언어 
+            </p>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">
+                HTML/CSS
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="alert alert-warning" role="alert">
+                                HTML/CSS/JavaScript
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">60%</div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/sql.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">관계형 데이터베이스 관리 시스템(RDBMS)의 데이터를 관리하기 위해 설계된 특수 목적의 프로그래밍 언어.</p>
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+                SQL
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="alert alert-info" role="alert">
+                                SQL
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/uipath.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">RPA</h5>
+            <p class="card-text">로봇 프로세스 자동화.</p>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-exampleModal">
+                RPA
+            </button>
+            <!-- Modal -->
+            <div class="modal fade bd-exampleModal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="alert alert-success" role="alert">
+                                RPA
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">50%</div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

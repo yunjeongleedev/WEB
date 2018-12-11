@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="header clearfix">
         <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #260301;">
@@ -16,27 +22,28 @@
                 <a class="navbar-brand" href="home.html">
                     <font style="color: white;">Who am I?</font>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/questions">
-                            <font style="color: white;">공모전</font>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/signin">
-                            <font style="color: white;">로그인</font>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/users/new">
-                            <font style="color: white;">회원가입</font>
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="skill.html">
+                                <font style="color: white;">역량</font>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/signin">
+                                <font style="color: white;">로그인</font>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/users/new">
+                                <font style="color: white;">회원가입</font>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -64,11 +71,21 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    <div class="readonly-form">
+        이름<input class="form-control" type="text" placeholder="이윤정" readonly>
+        생년월일<input class="form-control" type="text" placeholder="1998.08.19" readonly>
+        성별<input class="form-control" type="text" placeholder="여" readonly>
+        학력<input class="form-control" type="text" placeholder="명지대학교 경영정보학과 재학" readonly>
+        거주지<input class="form-control" type="text" placeholder="경기도 고양시" readonly>
+        이메일<input class="form-control" type="text" placeholder="lee_819@naver.com" readonly>
+        GitHub<br><a class="btn btn-secondary" href="https://github.com/yunjeongleedev" role="button">Link</a>
+    </div>
 
     <div class="footer">
         <div class="container">
-            <font size="4em">All rights reserved. &copy; 2018 Who am I?</font>
+            <font size="4em"></font>All rights reserved. &copy; 2018 Who am I?</font>
         </div>
     </div>
 </body>
+
 </html>
