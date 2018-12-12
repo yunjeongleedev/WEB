@@ -1,0 +1,250 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header clearfix">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #260301;">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    <font style="color: white;">Who am I?</font>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="skill.html">
+                                <font style="color: white;">역량</font>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="survey.html">
+                                <font style="color: white;">설문조사</font>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script>
+        function func(checkbox_num) {
+            //checkbox_num=관심분야 체크박스 개수
+            //sex=성별정보, age=나이정보, job=직업정보, info=관심분야 정보, user_info=나이, 성별, 직업, 관심분야 통합 정도
+            var chksex = document.fm.chk_sex;
+            var chkage = document.fm.chk_age;
+            for (i = 0; i < chksex.length; i++) {
+                if (chksex[i].checked == true) {
+                    sex = chksex[i].value;
+                    break;
+                }
+            }
+            for (i = 0; i < chkage.length; i++) {
+                if (chkage[i].checked == true) {
+                    age = chkage[i].value;
+                    break;
+                }
+            }
+            job = document.fm.job.options[document.fm.job.selectedIndex].text;
+
+            //관심분야 체크박스들의 배열 생성 및 초기화
+            var a = new Array();
+            a[0] = document.fm.chk_info1;
+            a[1] = document.fm.chk_info2;
+            a[2] = document.fm.chk_info3;
+            a[3] = document.fm.chk_info4;
+            a[4] = document.fm.chk_info5;
+            a[5] = document.fm.chk_info6;
+            a[6] = document.fm.chk_info7;
+            a[7] = document.fm.chk_info8;
+            a[8] = document.fm.chk_info9;
+            a[9] = document.fm.chk_info10;
+            a[10] = document.fm.chk_info11;
+            a[11] = document.fm.chk_info12;
+            a[12] = document.fm.chk_info13;
+            a[13] = document.fm.chk_info14;
+            a[14] = document.fm.chk_info15;
+            a[15] = document.fm.chk_info16;
+            a[16] = document.fm.chk_info17;
+            a[17] = document.fm.chk_info18;
+            a[18] = document.fm.chk_info19;
+            a[19] = document.fm.chk_info20;
+            a[20] = document.fm.chk_info21;
+            a[21] = document.fm.chk_info22;
+            a[22] = document.fm.chk_info23;
+            a[23] = document.fm.chk_info24;
+            a[24] = document.fm.chk_info25;
+            a[25] = document.fm.chk_info26;
+            a[26] = document.fm.chk_info27;
+            a[27] = document.fm.chk_info28;
+            a[28] = document.fm.chk_info29;
+            a[29] = document.fm.chk_info30;
+            a[30] = document.fm.chk_info31;
+            a[31] = document.fm.chk_info32;
+            a[32] = document.fm.chk_info33;
+            a[33] = document.fm.chk_info34;
+            a[34] = document.fm.chk_info35;
+            a[35] = document.fm.chk_info36;
+            a[36] = document.fm.chk_info37;
+            a[37] = document.fm.chk_info38;
+            a[38] = document.fm.chk_info39;
+            a[39] = document.fm.chk_info40;
+            a[40] = document.fm.chk_info41;
+            a[41] = document.fm.chk_info42;
+            a[42] = document.fm.chk_info43;
+            a[43] = document.fm.chk_info44;
+            a[44] = document.fm.chk_info45
+
+            var info = "";
+            for (i = 0; i < checkbox_num; i++) {
+                if (a[i].checked == true) {
+                    info += "," + a[i].value;
+                }
+            }
+            user_info = age + "," + sex + "," + job + info;
+            alert("\n\n선택된 값 : " + user_info + "\n");
+        }
+    </script>
+    <title>설문조사</title>
+    <div class="survey">
+        <h3><b>설문조사</b></h3><br><br>
+        <form name="fm" method="get">
+            <p> 성별</p>
+            <input type="radio" name="chk_sex" value="남자" checked="true">남자
+            <input type="radio" name="chk_sex" value="여자">여자
+            <p></p>
+            <p>연령</p>
+            <input type="radio" name="chk_age" value="십대" checked="true">10대
+            <input type="radio" name="chk_age" value="이십대">20대
+            <input type="radio" name="chk_age" value="삼십대">30대
+            <input type="radio" name="chk_age" value="사십대">40대
+            <p></p>
+            <select name="job" onChange="chg(this.selectedIndex)">
+                <option value="">직업선택</option>
+                <option value="관리">관리</option>
+                s<option value="건설">건설</option>
+                <option value="경비">경비</option>
+                <option value="경영">경영/회계,사무</option>
+                <option value="교육">교육/연구</option>
+                <option value="금융">금융/보험</option>
+                <option value="군인">군인</option>
+                <option value="기계">기계</option>
+                <option value="농림어업">농림어업</option>
+                <option value="문화">문화/예술/방송</option>
+                <option value="미용">미용,숙박,여행</option>
+                <option value="법률">법률/경찰/소방/교도</option>
+                <option value="보건">보건/의료</option>
+                <option value="사회복지">사회복지/종교</option>
+                <option value="섬유">섬유/의복</option>
+                <option value="식품가공">식품가공</option>
+                <option value="영업">영업/판매</option>
+                <option value="운전">운전/운송</option>
+                <option value="전기">전기/전자</option>
+                <option value="인쇄">인쇄/목재/가구</option>
+                <option value="화학">화학</option>
+                <option value="학생">학생</option>
+                <option value="대학생">대학(원)생</option>
+                <option value="기타">기타</option>
+            </select><br><br>
+            <p>관심분야</p>
+            <p>정치</p>
+            <p>
+                <input type="checkbox" name="chk_info1" value="청와대/외교">청와대/외교
+                <input type="checkbox" name="chk_info2" value="국회/정당">국회/정당
+                <input type="checkbox" name="chk_info3" value="북한/국방/안보">북한/국방/안보
+                <input type="checkbox" name="chk_info4" value="행정">행정
+            </p>
+            <p>경제</p>
+            <p>
+                <input type="checkbox" name="chk_info5" value="금융/증시">금융/증시
+                <input type="checkbox" name="chk_info6" value="글로벌경제">글로벌경제
+                <input type="checkbox" name="chk_info7" value="생활경제">생활경제
+                <input type="checkbox" name="chk_info8" value="기업">기업/재계
+            </p>
+            <p>
+                <input type="checkbox" name="chk_info9" value="부동산">부동산
+                <input type="checkbox" name="chk_info10" value="재테크">재테크
+            </p>
+            <p>사회</p>
+            <p>
+                <input type="checkbox" name="chk_info11" value="사건사고">사건사고
+                <input type="checkbox" name="chk_info12" value="교육">교육
+                <input type="checkbox" name="chk_info13" value="노동">노동
+                <input type="checkbox" name="chk_info14" value="언론">언론
+            </p>
+            <p>
+                <input type="checkbox" name="chk_info15" value="환경">환경
+                <input type="checkbox" name="chk_info16" value="인권/복지">인권/복지
+                <input type="checkbox" name="chk_info17" value="식품/의료">식품/의료
+            </p>
+            <p>생활/문화</p>
+            <p>
+                <input type="checkbox" name="chk_info18" value="날씨">날씨
+                <input type="checkbox" name="chk_info19" value="생활정보/트렌드">생활정보/트렌드
+                <input type="checkbox" name="chk_info20" value="교통/자동차">교통/자동차
+                <input type="checkbox" name="chk_info21" value="여행/레저">여행/레저
+            </p>
+            <p>
+                <input type="checkbox" name="chk_info22" value="음식/맛집">음식/맛집
+                <input type="checkbox" name="chk_info23" value="문화/예술">문화/예술
+                <input type="checkbox" name="chk_info24" value="공연/전시">공연/전시
+                <input type="checkbox" name="chk_info25" value="패션/뷰티">패션/뷰티
+            </p>
+            <p>
+                <input type="checkbox" name="chk_info26" value="건강/다이어트">건강/다이어트
+                <input type="checkbox" name="chk_info27" value="가정/육아">가정/육아
+            </p>
+            <p>IT/과학</p>
+            <p>
+                <input type="checkbox" name="chk_info28" value="IT산업">IT산업
+                <input type="checkbox" name="chk_info29" value="인터넷/SNS">인터넷/SNS
+                <input type="checkbox" name="chk_info30" value="디지털기기/신제품">디지털기기/신제품
+                <input type="checkbox" name="chk_info31" value="컴퓨터프로그램">컴퓨터프로그램
+            </p>
+            <p>
+                <input type="checkbox" name="chk_info32" value="보안/바이러스">보안/바이러스
+                <input type="checkbox" name="chk_info33" value="게임">게임
+                <input type="checkbox" name="chk_info34" value="통신정책">통신업계정책
+            </p>
+            <p>연예</p>
+            <p>
+                <input type="checkbox" name="chk_info35" value="드라마">드라마
+                <input type="checkbox" name="chk_info36" value="영화">영화
+                <input type="checkbox" name="chk_info37" value="해외연예가">해외연예가
+                <input type="checkbox" name="chk_info38" value="갸요">가요
+            </p>
+            <p>스포츠</p>
+            <p>
+                <input type="checkbox" name="chk_info39" value="축구">축구
+                <input type="checkbox" name="chk_info40" value="야구">야구
+                <input type="checkbox" name="chk_info41" value="농구">농구
+                <input type="checkbox" name="chk_info42" value="배구">배구
+            </p>
+            <p>
+                <input type="checkbox" name="chk_info43" value="E스포츠">E스포트
+                <input type="checkbox" name="chk_info44" value="골프">골프
+                <input type="checkbox" name="chk_info45" value="기타스포츠">기타스포츠
+            </p>
+            <p>
+                <form name="input" method="post" action="">
+                    <input type="button" value="저장" onClick="func(45)"></form>
+            </p>
+    </div>
+</body>
+
+</html>
